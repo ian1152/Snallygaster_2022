@@ -96,7 +96,7 @@ if option=='Beer Finder':
     
     st.write('Below you can enter an ingredient, style, or any other word that might appear in the descripition of the beer. You can also locate your favorite brewery in the dropdown below that. ')
 
-    search=st.text_input("Ingredient/style")
+    search=st.text_input("Type ingredient or style here")
     
     st.write(beer_finder(search))
     
