@@ -40,7 +40,7 @@ def beer_finder(pattern):
         new_pattern=new_pattern+caps
     new_pattern=re.sub(r"(\w)([A-Z])", r"\1 \2", new_pattern)  
         
-    return beer[beer.description.str.contains(pattern, na=False)]
+    return beer[beer.description.str.contains(new_pattern, na=False)]
     
 
 def brewery_location(pattern):
