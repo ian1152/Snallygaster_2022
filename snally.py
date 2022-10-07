@@ -50,7 +50,7 @@ def brewery_location(pattern):
 
 
 st.sidebar.title('Snally 2022')
-st.sidebar.write('Developed by Ian Schaaf: ianschaaf1@gmail.com')
+st.sidebar.write('Developed by Ian Schaaf')
 
 option=st.sidebar.selectbox('Select Page', ('Welcome Page', 'Analytics and Visualization', 'Beer Finder'))
 
