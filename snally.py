@@ -12,7 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import re
 
-beer=pd.read_csv('https://raw.githubusercontent.com/ian1152/Snallygaster_2022/main/Snallygaster%202022%20Beer%20List%20-%20Public%20-%20Beers.csv')
+beer=pd.read_csv('https://raw.githubusercontent.com/ian1152/Snallygaster_2022/main/Snallygaster%202022%20Beer%20List%20-%20Public%20-%20Beers-2.csv')
 beer.columns=beer.columns.str.lower()
 beer.abv=beer.abv.str.replace('%','').replace('TBD',np.nan).astype('float')
 styles= {'IPA': [len(beer[beer.description.str.contains(r'IPA', na=False)])],
