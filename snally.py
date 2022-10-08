@@ -74,12 +74,15 @@ if option=='Analytics and Visualization':
     
     
     #col1, col2=st.columns(2)
-    
+    fig, (ax_abv, ax_style)=plt.subplots(
+        nrows=1,
+        ncols=2,
+        figsize=(15,6)
+        )
     beer.abv.plot.hist( title='What ABV are most beers?', xticks=np.arange(3,20,1), edgecolor='black', ax=ax_abv)
 
     pd.DataFrame(styles).plot.bar(title="Beer by style", xlabel='', ax=ax_style)
     
-    beer.groupby('brewery').mean().sort_values('abv', ascending=0)[:10].plot.barh(title='Top 10 highest average ABV breweries')
 
 
 
